@@ -1,5 +1,7 @@
 package Board;
 
+import GameData.Position;
+
 public class CheckersBoard extends Board
 {
     public CheckersBoard()
@@ -9,6 +11,11 @@ public class CheckersBoard extends Board
 
     public void reset()
     {
+
+    }
+
+    @Override
+    public void movePiece(Position source, Position destination) {
 
     }
 }

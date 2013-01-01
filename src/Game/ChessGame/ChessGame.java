@@ -2,7 +2,8 @@ package Game.ChessGame;
 
 import Board.ChessBoard;
 import Game.GameContract.Game;
-import GameData.Move;
+import GameData.Position;
+import Move.Move;
 import Piece.Piece;
 
 public class ChessGame extends Game
@@ -17,43 +18,27 @@ public class ChessGame extends Game
     {
         Move currMove;
         Piece sourcePiece;
+        Position currSource;
 
         for(int i=0;i<gameMoves.size();i++)
         {
             currMove = gameMoves.get(i);
-            sourcePiece = gameBoard.getPieceAt(currMove.source.x,currMove.source.y);
 
-            if(i%2==0)
+            currSource = currMove.checkMove(gameBoard);
+
+            if(currSource == null)
             {
-                if(sourcePiece!=null && sourcePiece.getColor().equals("WHITE"))
-                {
-                    if(sourcePiece.move(currMove.source,currMove.destination) == false)
-                    {
-                        return (i+1);
-                    }
-                }
-                else
-                {
-                    return (i+1);
-                }
-
+                //print fail
+                return 0;
             }
             else
             {
-                if(sourcePiece!=null && sourcePiece.getColor().equals("BLACK"))
-                {
-                    if(sourcePiece.move(currMove.source,currMove.destination) == false)
-                    {
-                        return (i+1);
-                    }
-                }
-                else
-                {
-                    return (i+1);
-                }
+
             }
+
         }
 
-        return 0;
+        //print Success
+        return 1;
     }
 }

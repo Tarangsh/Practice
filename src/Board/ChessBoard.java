@@ -1,5 +1,6 @@
 package Board;
 
+import GameData.Position;
 import Piece.*;
 import Piece.Piece;
 
@@ -10,7 +11,7 @@ public class ChessBoard extends Board
         Boxes = new Box[8][8];
     }
 
-    public void reset()
+    public void reset()  // Pass an argument for normal/
     {
         Piece currPiece;
 
@@ -112,6 +113,12 @@ public class ChessBoard extends Board
         currPiece = new King();
         currPiece.setColor("BLACK");
         Boxes[7][4].setContent(currPiece);
+
+    }
+
+    @Override
+    public void movePiece(Position source, Position destination)
+    {
 
     }
 }

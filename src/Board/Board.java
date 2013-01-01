@@ -1,5 +1,6 @@
 package Board;
 
+import GameData.Position;
 import Piece.Piece;
 
 public abstract class Board
@@ -20,4 +21,6 @@ public abstract class Board
     {
         return Boxes[i][j].getContent();
     }
+
+    public abstract void movePiece(Position source,Position destination);
 }
