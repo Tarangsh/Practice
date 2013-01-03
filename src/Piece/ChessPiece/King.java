@@ -1,6 +1,6 @@
 package Piece.ChessPiece;
 
-import GameData.Position;
+import MiscData.Position;
 import ReusableContracts.Piece.ChessPiece;
 
 public class King extends ChessPiece

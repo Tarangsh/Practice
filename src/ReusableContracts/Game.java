@@ -1,7 +1,7 @@
 package ReusableContracts;
 
-import GameData.Position;
-import InputParser.*;
+import MiscData.Position;
+import MiscData.parserResult;
 import ReusableContracts.Move.Move;
 import ReusableContracts.Piece.Piece;
 
@@ -18,7 +18,6 @@ public abstract class Game
     public Game()
     {
         gameMoves = new ArrayList<Move>();
-        InParser = new InputParser();
     }
 
     public void provideMoves(String Input)
@@ -52,7 +51,7 @@ public abstract class Game
             }
             else
             {
-
+                gameBoard.movePiece(currSource,currMove.getDestination());
             }
 
         }

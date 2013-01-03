@@ -1,7 +1,7 @@
 package Move.ChessMove;
 
 import ReusableContracts.Board;
-import GameData.Position;
+import MiscData.Position;
 import ReusableContracts.Move.ChessMove;
 
 public class BishopMove extends ChessMove

@@ -1,9 +1,9 @@
 package Board;
 
-import GameData.Position;
+import MiscData.Position;
 import Piece.ChessPiece.*;
 import ReusableContracts.Board;
-import ReusableContracts.Box;
+import MiscData.Box;
 import ReusableContracts.Piece.Piece;
 
 public class ChessBoard extends Board

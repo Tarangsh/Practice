@@ -1,6 +1,6 @@
 package ReusableContracts.Move;
 
-import GameData.Position;
+import MiscData.Position;
 import ReusableContracts.Board;
 
 public abstract class Move

@@ -1,8 +1,8 @@
 package Board;
 
-import GameData.Position;
+import MiscData.Position;
 import ReusableContracts.Board;
-import ReusableContracts.Box;
+import MiscData.Box;
 
 public class CheckersBoard extends Board
 {

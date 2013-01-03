@@ -1,6 +1,7 @@
 package ReusableContracts;
 
-import GameData.Position;
+import MiscData.Box;
+import MiscData.Position;
 import ReusableContracts.Piece.Piece;
 
 public abstract class Board

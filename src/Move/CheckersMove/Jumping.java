@@ -1,6 +1,6 @@
 package Move.CheckersMove;
 
-import GameData.Position;
+import MiscData.Position;
 import ReusableContracts.Board;
 import ReusableContracts.Move.CheckersMove;
 

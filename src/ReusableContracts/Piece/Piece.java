@@ -1,6 +1,6 @@
 package ReusableContracts.Piece;
 
-import GameData.Position;
+import MiscData.Position;
 import Piece.PieceId;
 
 public abstract class Piece
