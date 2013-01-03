@@ -2,31 +2,31 @@ package Piece;
 
 public class PieceId
 {
-    private Character name;
-    private Character initialPosition;
+    private String name;
+    private String initialPosition;
 
     public PieceId()
     {
-        name = '_';
-        initialPosition = '_';
+        name = "_";
+        initialPosition = "_";
     }
 
-    public Character getName()
+    public String getName()
     {
         return name;
     }
 
-    public void setName(Character name)
+    public void setName(String name)
     {
         this.name = name;
     }
 
-    public Character getInitialPosition()
+    public String getInitialPosition()
     {
         return initialPosition;
     }
 
-    public void setInitialPosition(Character initialPosition)
+    public void setInitialPosition(String initialPosition)
     {
         this.initialPosition = initialPosition;
     }

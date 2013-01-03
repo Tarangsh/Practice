@@ -1,6 +1,6 @@
 package GameTester;
 
-import Game.ChessGame.ChessGame;
+import Game.ChessGame;
 
 public class GameTester
 {

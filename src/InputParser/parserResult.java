@@ -1,7 +1,8 @@
 package InputParser;
 
 import java.util.ArrayList;
-import Move.*;
+
+import ReusableContracts.Move.Move;
 
 public class parserResult
 {

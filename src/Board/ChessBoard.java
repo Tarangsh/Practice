@@ -1,14 +1,19 @@
 package Board;
 
 import GameData.Position;
-import Piece.*;
-import Piece.Piece;
+import Piece.ChessPiece.*;
+import ReusableContracts.Board;
+import ReusableContracts.Box;
+import ReusableContracts.Piece.Piece;
 
 public class ChessBoard extends Board
 {
     public ChessBoard()
     {
-        Boxes = new Box[8][8];
+        xDim = 8;
+        yDim = 8;
+
+        Boxes = new Box[xDim][yDim];
     }
 
     public void reset()  // Pass an argument for normal/
@@ -42,7 +47,7 @@ public class ChessBoard extends Board
 
             currPiece = new Pawn();
             currPiece.setColor("BLACK");
-            Boxes[7][i].setContent(new Pawn());
+            Boxes[6][i].setContent(new Pawn());
         }
 
         //Rooks

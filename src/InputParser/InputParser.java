@@ -1,7 +1,8 @@
 package InputParser;
 
 import GameData.Position;
-import Move.*;
+import Move.ChessMove.*;
+import ReusableContracts.Move.Move;
 
 import java.util.ArrayList;
 
@@ -60,7 +61,7 @@ public class InputParser
         else if(type.contains("B"))
             return (new BishopMove());
         else
-            return null;
+            return (new PawnMove());
     }
 
     public Move processMove(String move,String color)
@@ -71,8 +72,8 @@ public class InputParser
         if(move.length() == 2)
         {
             currMove = new PawnMove();
-            destination.setX(getVal(move.substring(0, 0)));
-            destination.setY(getVal(move.substring(1, 1)));
+            destination.setX(getVal(move.substring(0, 1)));
+            destination.setY(getVal(move.substring(1, 2)));
             currMove.setColor(color);
 
             currMove.setDestination(destination);
@@ -81,8 +82,8 @@ public class InputParser
         {
             currMove = getMove(move);
 
-            destination.setX(getVal(move.substring(0, 0)));
-            destination.setY(getVal(move.substring(1, 1)));
+            destination.setX(getVal(move.substring(1, 2)));
+            destination.setY(getVal(move.substring(2, 3)));
             currMove.setColor(color);
 
             currMove.setDestination(destination);
@@ -100,16 +101,16 @@ public class InputParser
                 source.setX(getVal(move.substring(0, 0)));
                 source.setY(getVal(move.substring(1, 1)));
 
-                destination.setX(getVal(move.substring(2, 2)));
-                destination.setY(getVal(move.substring(3, 3)));
+                destination.setX(getVal(move.substring(2, 3)));
+                destination.setY(getVal(move.substring(3, 4)));
                 currMove.setColor(color);
                 currMove.setDestination(destination);
                 currMove.setSource(source);
             }
             else
             {
-                destination.setX(getVal(move.substring(2, 2)));
-                destination.setY(getVal(move.substring(3, 3)));
+                destination.setX(getVal(move.substring(2, 3)));
+                destination.setY(getVal(move.substring(3, 4)));
                 currMove.setColor(color);
                 currMove.setDestination(destination);
 

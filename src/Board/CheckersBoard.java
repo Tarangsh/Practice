@@ -1,6 +1,8 @@
 package Board;
 
 import GameData.Position;
+import ReusableContracts.Board;
+import ReusableContracts.Box;
 
 public class CheckersBoard extends Board
 {
@@ -15,7 +17,8 @@ public class CheckersBoard extends Board
     }
 
     @Override
-    public void movePiece(Position source, Position destination) {
+    public void movePiece(Position source, Position destination)
+    {
 
     }
 }
