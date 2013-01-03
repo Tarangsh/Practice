@@ -19,8 +19,8 @@ public class ChessInputParser extends InputParser
         if(move.length() == 2)
         {
             currMove = new PawnMove();
-            destination.setX(getVal(move.substring(0, 1)));
-            destination.setY(getVal(move.substring(1, 2)));
+            destination.setX(getVal(move.substring(1, 2)));
+            destination.setY(getVal(move.substring(0, 1)));
             currMove.setColor(color);
 
             currMove.setDestination(destination);
@@ -29,8 +29,8 @@ public class ChessInputParser extends InputParser
         {
             currMove = getMove(move);
 
-            destination.setX(getVal(move.substring(1, 2)));
-            destination.setY(getVal(move.substring(2, 3)));
+            destination.setX(getVal(move.substring(2, 3)));
+            destination.setY(getVal(move.substring(1, 2)));
             currMove.setColor(color);
 
             currMove.setDestination(destination);
@@ -93,7 +93,7 @@ public class ChessInputParser extends InputParser
                     if(input.length() > 0)
                     {
                         bMove = input.split(" ",2)[0];
-                        Moves.add(processMove(wMove,"BLACK"));
+                        Moves.add(processMove(bMove,"BLACK"));
                         input = input.split(" ",2)[1];
                     }
                 }

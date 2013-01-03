@@ -25,6 +25,11 @@ public abstract class Board
         return Boxes[i][j].getContent();
     }
 
+    public void setPieceAt(Piece piece,int i,int j)
+    {
+        Boxes[i][j].setContent(piece);
+    }
+
     public abstract void movePiece(Position source,Position destination);
 
     public void display()
@@ -47,4 +52,23 @@ public abstract class Board
         System.out.println("**************************************");
     }
 
+    public int getxDim()
+    {
+        return xDim;
+    }
+
+    public void setxDim(int xDim)
+    {
+        this.xDim = xDim;
+    }
+
+    public int getyDim()
+    {
+        return yDim;
+    }
+
+    public void setyDim(int yDim)
+    {
+        this.yDim = yDim;
+    }
 }

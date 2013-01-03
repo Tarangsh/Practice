@@ -130,6 +130,7 @@ public class ChessBoard extends Board
     @Override
     public void movePiece(Position source, Position destination)
     {
-
+        setPieceAt(getPieceAt(source.getX(),source.getY()),destination.getX(),destination.getY());
+        setPieceAt(null,source.getX(),source.getY());
     }
 }
