@@ -9,6 +9,7 @@ public abstract class Board
     protected int xDim,yDim;
 
     public abstract void reset();
+    public abstract void reset(String ConfigFile);
 
     public boolean isVacant(int i,int j)
     {

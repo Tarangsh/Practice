@@ -17,6 +17,12 @@ public class CheckersBoard extends Board
     }
 
     @Override
+    public void reset(String ConfigFile)
+    {
+
+    }
+
+    @Override
     public void movePiece(Position source, Position destination)
     {
 

@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Piece.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357124438144" ignored="false" />
     <file path="/Knight.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357199492603" ignored="false" />
-    <file path="/Board.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357125336396" ignored="false" />
+    <file path="/Board.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357200496506" ignored="false" />
     <file path="/Game.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1356078899806" ignored="false" />
     <file path="/fragment.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357199952851" ignored="false" />
     <file path="/Box.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1356009636192" ignored="false" />
@@ -177,24 +177,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Red.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Piece/CheckersPiece/Red.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bishop.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Piece/ChessPiece/Bishop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="King.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Piece/ChessPiece/King.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -240,30 +222,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameTester.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameTester.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameTester/GameTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="56" selection-start="951" selection-end="951" vertical-scroll-proportion="0.53311795">
+            <state line="22" column="56" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jumping.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Move/CheckersMove/Jumping.java">
+      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="22" column="132" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KnightMove.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/KnightMove.java">
+      <file leaf-file-name="ChessBoard.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Board/ChessBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+            <state line="126" column="8" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.7576737">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="48" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckersBoard.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Board/CheckersBoard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="7" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -279,9 +277,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ReusableContracts/Game.java" />
-        <option value="$PROJECT_DIR$/src/Game/ChessGame.java" />
-        <option value="$PROJECT_DIR$/src/ReusableContracts/CheckersMove.java" />
         <option value="$PROJECT_DIR$/src/ReusableContracts/ChessPiece.java" />
         <option value="$PROJECT_DIR$/src/Piece/White.java" />
         <option value="$PROJECT_DIR$/src/Piece/Red.java" />
@@ -295,6 +290,9 @@
         <option value="$PROJECT_DIR$/src/Piece/Queen.java" />
         <option value="$PROJECT_DIR$/src/Piece/Rook.java" />
         <option value="$PROJECT_DIR$/src/Piece/ChessPiece/Rook.java" />
+        <option value="$PROJECT_DIR$/src/ReusableContracts/Board.java" />
+        <option value="$PROJECT_DIR$/src/Board/CheckersBoard.java" />
+        <option value="$PROJECT_DIR$/src/Board/ChessBoard.java" />
       </list>
     </option>
   </component>
@@ -865,34 +863,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/ChessMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/CheckersMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Piece/ChessPiece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Piece/CheckersPiece/White.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Piece/CheckersPiece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="16" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
@@ -976,7 +946,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GameTester/GameTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="56" selection-start="951" selection-end="951" vertical-scroll-proportion="0.53311795">
+        <state line="22" column="56" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="132" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="48" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board/CheckersBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="7" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board/ChessBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="8" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.7576737">
           <folding />
         </state>
       </provider>
