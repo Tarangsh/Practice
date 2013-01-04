@@ -8,4 +8,14 @@ public abstract class CheckersMove extends Move
     {
         kinging = false;
     }
+
+    public boolean isKinging()
+    {
+        return kinging;
+    }
+
+    public void setKinging(boolean kinging)
+    {
+        this.kinging = kinging;
+    }
 }

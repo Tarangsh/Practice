@@ -62,4 +62,50 @@ public abstract class Move
     {
         this.preferedFileLetterNo = preferedFileLetterNo;
     }
+
+    public String getPromotion()
+    {
+        return promotion;
+    }
+
+    public void setPromotion(String promotion)
+    {
+        this.promotion = promotion;
+    }
+
+    public boolean isCapture()
+    {
+        return false;
+    }
+
+    public void setCapture(boolean capture)
+    {
+    }
+
+    public boolean isCheck()
+    {
+        return false;
+    }
+
+    public void setCheck(boolean check)
+    {
+    }
+
+    public boolean isCheckmate()
+    {
+        return false;
+    }
+
+    public void setCheckmate(boolean checkmate)
+    {
+    }
+
+    public boolean isKinging()
+    {
+        return false;
+    }
+
+    public void setKinging(boolean kinging)
+    {
+    }
 }

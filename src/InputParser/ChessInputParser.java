@@ -16,55 +16,45 @@ public class ChessInputParser extends InputParser
         Move currMove = null;
         Position destination = new Position();
 
-        if(move.length() == 2)
+        currMove = getMove(move);
+
+        if(move.contains("#"))
         {
-            currMove = new PawnMove();
-            destination.setX(getVal(move.substring(1, 2)));
-            destination.setY(getVal(move.substring(0, 1)));
-            currMove.setColor(color);
-
-            currMove.setDestination(destination);
-        }
-        else if(move.length() == 3)
-        {
-            currMove = getMove(move);
-
-            destination.setX(getVal(move.substring(2, 3)));
-            destination.setY(getVal(move.substring(1, 2)));
-            currMove.setColor(color);
-
-            currMove.setDestination(destination);
-        }
-        else if(move.length() == 4)
-        {
-            currMove = getMove(move.substring(0,0));
-
-            if(currMove == null)
-            {
-                Position source = new Position();
-
-                currMove = new unKnownMove();
-
-                source.setX(getVal(move.substring(0, 0)));
-                source.setY(getVal(move.substring(1, 1)));
-
-                destination.setX(getVal(move.substring(2, 3)));
-                destination.setY(getVal(move.substring(3, 4)));
-                currMove.setColor(color);
-                currMove.setDestination(destination);
-                currMove.setSource(source);
-            }
-            else
-            {
-                destination.setX(getVal(move.substring(2, 3)));
-                destination.setY(getVal(move.substring(3, 4)));
-                currMove.setColor(color);
-                currMove.setDestination(destination);
-
-                currMove.setPreferedFileLetterNo(getVal(move.substring(1,1)));
-            }
+            currMove.setCheckmate(true);
+            move = move.substring(0,move.length()-1);
         }
 
+        if(move.contains("+"))
+        {
+            currMove.setCheck(true);
+            move = move.substring(0,move.length()-1);
+        }
+
+        if(move.contains("="))
+        {
+            currMove.setPromotion(move.substring(move.length()-1,move.length()));
+            move = move.substring(0,move.length()-2);
+        }
+
+        destination.setX(getVal(move.substring(move.length()-1, move.length())));
+        destination.setY(getVal(move.substring(move.length()-2, move.length()-1)));
+        currMove.setColor(color);
+
+        currMove.setDestination(destination);
+
+        move = move.substring(0,move.length()-2);
+
+        if(move.contains("x"))
+        {
+            currMove.setCapture(true);
+            move = move.substring(0,move.length()-1);
+        }
+
+        //FileLetterNumber
+        if(move.length() > 0)
+        {
+            currMove.setPreferedFileLetterNo(getVal(move.substring(move.length()-1,move.length())));
+        }
 
         return currMove;
     }
