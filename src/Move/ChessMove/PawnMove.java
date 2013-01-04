@@ -55,10 +55,6 @@ public class PawnMove extends ChessMove
         {
             if(capture == false)
                 return null;
-
-
-
-
         }
 
         //Other Position Normal case

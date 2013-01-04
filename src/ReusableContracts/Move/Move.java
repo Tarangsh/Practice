@@ -8,12 +8,12 @@ public abstract class Move
     protected Position source;
     protected Position destination;
     protected String color;
-    protected int preferedFileLetterNo;
+    protected String FileLetter;
     protected String promotion;
 
     public Move()
     {
-        preferedFileLetterNo = -1;
+        FileLetter = "_";
         source = null;
         destination = null;
         color = "";
@@ -53,14 +53,14 @@ public abstract class Move
         this.color = color;
     }
 
-    public int getPreferedFileLetterNo()
+    public String getFileLetter()
     {
-        return preferedFileLetterNo;
+        return FileLetter;
     }
 
-    public void setPreferedFileLetterNo(int preferedFileLetterNo)
+    public void setFileLetter(String fileLetter)
     {
-        this.preferedFileLetterNo = preferedFileLetterNo;
+        this.FileLetter = fileLetter;
     }
 
     public String getPromotion()

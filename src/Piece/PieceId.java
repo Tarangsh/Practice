@@ -3,12 +3,12 @@ package Piece;
 public class PieceId
 {
     private String name;
-    private String initialPosition;
+    private String fileLetter;
 
     public PieceId()
     {
         name = "_";
-        initialPosition = "_";
+        fileLetter = "_";
     }
 
     public String getName()
@@ -21,13 +21,13 @@ public class PieceId
         this.name = name;
     }
 
-    public String getInitialPosition()
+    public String getFileLetter()
     {
-        return initialPosition;
+        return fileLetter;
     }
 
-    public void setInitialPosition(String initialPosition)
+    public void setFileLetter(String fileLetter)
     {
-        this.initialPosition = initialPosition;
+        this.fileLetter = fileLetter;
     }
 }

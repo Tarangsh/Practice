@@ -2,8 +2,6 @@ package InputParser;
 
 import MiscData.Position;
 import MiscData.parserResult;
-import Move.ChessMove.PawnMove;
-import Move.ChessMove.unKnownMove;
 import ReusableContracts.InputParser;
 import ReusableContracts.Move.Move;
 
@@ -36,7 +34,7 @@ public class ChessInputParser extends InputParser
             move = move.substring(0,move.length()-2);
         }
 
-        destination.setX(getVal(move.substring(move.length()-1, move.length())));
+        destination.setX(getVal(move.substring(move.length() - 1, move.length())));
         destination.setY(getVal(move.substring(move.length()-2, move.length()-1)));
         currMove.setColor(color);
 
@@ -53,7 +51,7 @@ public class ChessInputParser extends InputParser
         //FileLetterNumber
         if(move.length() > 0)
         {
-            currMove.setPreferedFileLetterNo(getVal(move.substring(move.length()-1,move.length())));
+            currMove.setFileLetter(move.substring(move.length() - 1, move.length()));
         }
 
         return currMove;

@@ -6,8 +6,249 @@ import ReusableContracts.Move.ChessMove;
 
 public class KnightMove extends ChessMove
 {
+
+
+    private Position verify(Board board)
+    {
+        int x = destination.getX();
+        int y = destination.getY();
+        int xDim = board.getxDim();
+        int yDim = board.getyDim();
+        Position src;
+
+        if(x<xDim-1 && y<yDim-2)
+        {
+            if(board.getPieceAt(x+1,y+2)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                     src = new Position();
+                     src.setX(x+1);
+                     src.setY(y+2);
+
+                     return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x+1,y+2).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x+1);
+                        src.setY(y+2);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        if(x<xDim-1 && y>1)
+        {
+            if(board.getPieceAt(x+1,y-2)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                    src = new Position();
+                    src.setX(x+1);
+                    src.setY(y-2);
+
+                    return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x+1,y-2).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x+1);
+                        src.setY(y-2);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        if(x>0 && y<yDim-2)
+        {
+            if(board.getPieceAt(x-1,y+2)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                    src = new Position();
+                    src.setX(x-1);
+                    src.setY(y+2);
+
+                    return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x-1,y+2).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x-1);
+                        src.setY(y+2);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        if(x>0 && y>1)
+        {
+            if(board.getPieceAt(x-1,y-2)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                    src = new Position();
+                    src.setX(x-1);
+                    src.setY(y-2);
+
+                    return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x-1,y-2).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x-1);
+                        src.setY(y-2);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        if(x<xDim-2 && y<yDim-1)
+        {
+            if(board.getPieceAt(x+2,y+1)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                    src = new Position();
+                    src.setX(x+2);
+                    src.setY(y+1);
+
+                    return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x+2,y+1).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x+2);
+                        src.setY(y+1);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        if(x<xDim-2 && y>0)
+        {
+            if(board.getPieceAt(x+2,y-1)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                    src = new Position();
+                    src.setX(x+2);
+                    src.setY(y-1);
+
+                    return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x+2,y-1).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x+2);
+                        src.setY(y-1);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        if(x>1 && y<yDim-1)
+        {
+            if(board.getPieceAt(x-2,y+1)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                    src = new Position();
+                    src.setX(x-2);
+                    src.setY(y+1);
+
+                    return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x-2,y+1).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x-2);
+                        src.setY(y+1);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        if(x>1 && y>0)
+        {
+            if(board.getPieceAt(x-2,y-1)!=null)
+            {
+                if(FileLetter.equals("_"))
+                {
+                    src = new Position();
+                    src.setX(x-2);
+                    src.setY(y-1);
+
+                    return src;
+                }
+                else
+                {
+                    if(FileLetter.equals(board.getPieceAt(x-2,y-1).getFileLetter()))
+                    {
+                        src = new Position();
+                        src.setX(x-2);
+                        src.setY(y-1);
+
+                        return src;
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
+
+
     public Position checkMove(Board board)
     {
+        if(board.getPieceAt(destination.getX(),destination.getY()) == null)
+        {
+            if(capture==true)
+            {
+                return null;
+            }
+
+            return verify(board);
+        }
+        else
+        {
+            if(capture==false)
+            {
+                return null;
+            }
+
+           // if(board.getPieceAt(destination.getX(),destination.))
+        }
+
         return null;
     }
 }

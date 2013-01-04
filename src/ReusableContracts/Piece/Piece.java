@@ -33,13 +33,13 @@ public abstract class Piece
         Pid.setName(name);
     }
 
-    public String getInitialPosition()
+    public String getFileLetter()
     {
-        return Pid.getInitialPosition();
+        return Pid.getFileLetter();
     }
 
-    public void setInitialPosition(String initialPosition)
+    public void setFileLetter(String initialPosition)
     {
-        Pid.setInitialPosition(initialPosition);
+        Pid.setFileLetter(initialPosition);
     }
 }
