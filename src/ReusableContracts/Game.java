@@ -42,8 +42,6 @@ public abstract class Game
 
             currSource = currMove.checkMove(gameBoard);
 
-            gameBoard.display();
-
             if(currSource == null)
             {
                 //print fail
@@ -52,6 +50,7 @@ public abstract class Game
             else
             {
                 gameBoard.movePiece(currSource,currMove.getDestination());
+                gameBoard.display();
             }
 
         }

@@ -49,7 +49,7 @@ public abstract class InputParser
     public Move getMove(String type)
     {
         if(type.contains("N"))
-            return (new KingMove());
+            return (new KnightMove());
         else if(type.contains("R"))
             return (new RookMove());
         else if(type.contains("K"))

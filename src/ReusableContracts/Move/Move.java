@@ -60,7 +60,10 @@ public abstract class Move
 
     public void setFileLetter(String fileLetter)
     {
-        this.FileLetter = fileLetter;
+        if(fileLetter.equals("a")||fileLetter.equals("b")||fileLetter.equals("c")||fileLetter.equals("d")||fileLetter.equals("e")||fileLetter.equals("f")||fileLetter.equals("g")||fileLetter.equals("h"))
+        {
+            this.FileLetter = fileLetter;
+        }
     }
 
     public String getPromotion()

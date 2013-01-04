@@ -7,10 +7,6 @@ public abstract class Piece
 {
     protected PieceId Pid = new PieceId();
     protected String color;
-    public boolean move(Position source,Position destination)
-    {
-        return false;
-    }
 
 
     public String getColor()

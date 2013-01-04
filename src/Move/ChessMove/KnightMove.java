@@ -18,7 +18,7 @@ public class KnightMove extends ChessMove
 
         if(x<xDim-1 && y<yDim-2)
         {
-            if(board.getPieceAt(x+1,y+2)!=null)
+            if(board.getPieceAt(x+1,y+2)!=null && board.getPieceAt(x+1,y+2).getName().equals("N") && board.getPieceAt(x+1,y+2).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -44,7 +44,7 @@ public class KnightMove extends ChessMove
 
         if(x<xDim-1 && y>1)
         {
-            if(board.getPieceAt(x+1,y-2)!=null)
+            if(board.getPieceAt(x+1,y-2)!=null && board.getPieceAt(x+1,y-2).getName().equals("N") && board.getPieceAt(x+1,y-2).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -70,7 +70,7 @@ public class KnightMove extends ChessMove
 
         if(x>0 && y<yDim-2)
         {
-            if(board.getPieceAt(x-1,y+2)!=null)
+            if(board.getPieceAt(x-1,y+2)!=null && board.getPieceAt(x-1,y+2).getName().equals("N") && board.getPieceAt(x-1,y+2).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -96,7 +96,7 @@ public class KnightMove extends ChessMove
 
         if(x>0 && y>1)
         {
-            if(board.getPieceAt(x-1,y-2)!=null)
+            if(board.getPieceAt(x-1,y-2)!=null && board.getPieceAt(x-1,y-2).getName().equals("N") && board.getPieceAt(x-1,y-2).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -122,7 +122,7 @@ public class KnightMove extends ChessMove
 
         if(x<xDim-2 && y<yDim-1)
         {
-            if(board.getPieceAt(x+2,y+1)!=null)
+            if(board.getPieceAt(x+2,y+1)!=null && board.getPieceAt(x+2,y+1).getName().equals("N") && board.getPieceAt(x+2,y+1).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -148,7 +148,7 @@ public class KnightMove extends ChessMove
 
         if(x<xDim-2 && y>0)
         {
-            if(board.getPieceAt(x+2,y-1)!=null)
+            if(board.getPieceAt(x+2,y-1)!=null && board.getPieceAt(x+2,y-1).getName().equals("N") && board.getPieceAt(x+2,y-1).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -174,7 +174,7 @@ public class KnightMove extends ChessMove
 
         if(x>1 && y<yDim-1)
         {
-            if(board.getPieceAt(x-2,y+1)!=null)
+            if(board.getPieceAt(x-2,y+1)!=null && board.getPieceAt(x-2,y+1).getName().equals("N") && board.getPieceAt(x-2,y+1).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -200,7 +200,7 @@ public class KnightMove extends ChessMove
 
         if(x>1 && y>0)
         {
-            if(board.getPieceAt(x-2,y-1)!=null)
+            if(board.getPieceAt(x-2,y-1)!=null && board.getPieceAt(x-2,y-1).getName().equals("N") && board.getPieceAt(x-2,y-1).getColor().equals(color))
             {
                 if(FileLetter.equals("_"))
                 {
@@ -246,9 +246,13 @@ public class KnightMove extends ChessMove
                 return null;
             }
 
-           // if(board.getPieceAt(destination.getX(),destination.))
-        }
 
-        return null;
+            if(board.getPieceAt(destination.getX(),destination.getY()).getColor().equals(color))
+            {
+                return null;
+            }
+
+            return verify(board);
+        }
     }
 }
