@@ -9,6 +9,32 @@ import ReusableContracts.Move.ChessMove;
 public class KnightMove extends ChessMove
 {
 
+    public Position checkMove(Board board)
+    {
+        if(board.getPieceAt(destination.getX(),destination.getY()) == null)
+        {
+            if(capture==true)
+            {
+                return null;
+            }
+
+            return verify(board);
+        }
+        else
+        {
+            if(capture==false)
+            {
+                return null;
+            }
+
+            if(board.getPieceAt(destination.getX(),destination.getY()).getColor() == color)
+            {
+                return null;
+            }
+
+            return verify(board);
+        }
+    }
 
     private Position verify(Board board)
     {
@@ -181,32 +207,4 @@ public class KnightMove extends ChessMove
         return null;
     }
 
-
-    public Position checkMove(Board board)
-    {
-        if(board.getPieceAt(destination.getX(),destination.getY()) == null)
-        {
-            if(capture==true)
-            {
-                return null;
-            }
-
-            return verify(board);
-        }
-        else
-        {
-            if(capture==false)
-            {
-                return null;
-            }
-
-
-            if(board.getPieceAt(destination.getX(),destination.getY()).getColor() == color)
-            {
-                return null;
-            }
-
-            return verify(board);
-        }
-    }
 }
