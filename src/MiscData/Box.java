@@ -1,41 +1,39 @@
 package MiscData;
 
-import ReusableContracts.Piece.Piece;
+import MiscData.Enums.EBoxColor;
+import Piece.Piece;
 
 public class Box
 {
-    private Piece Content;
-    private String Color;
+    private Piece content;
+    private EBoxColor color;
 
-    public Box()
+    public Box(EBoxColor bColor)
     {
-        Content = null;
-        Color = "";
+        content = null;
+        color = bColor;
     }
 
     public Piece getContent()
     {
-        return Content;
+        return content;
     }
 
-    public String getColor()
+    public EBoxColor getColor()
     {
-        return Color;
+        return color;
     }
 
-    public void setContent(Piece content)
+    public void setContent(Piece bContent)
     {
-        Content = content;
+        content = bContent;
     }
 
-    public void setColor(String color)
-    {
-        Color = color;
-    }
+
 
     public boolean isVacant()
     {
-        if(Content == null)
+        if(content == null)
             return true;
         else
             return false;

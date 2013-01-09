@@ -1,6 +1,6 @@
 package Move.ChessMove;
 
-import ReusableContracts.Board;
+import Board.Board;
 import MiscData.Position;
 import ReusableContracts.Move.ChessMove;
 

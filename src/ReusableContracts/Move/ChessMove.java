@@ -1,11 +1,14 @@
 package ReusableContracts.Move;
 
+import MiscData.Enums.ECastling;
+
 public abstract class ChessMove extends Move
 {
     protected String promotion;
     protected boolean capture;
     protected boolean check;
     protected boolean checkmate;
+    protected ECastling castling;
 
     public ChessMove()
     {
@@ -13,6 +16,7 @@ public abstract class ChessMove extends Move
         capture = false;
         check = false;
         checkmate = false;
+        castling = ECastling.NA;
     }
 
     public String getPromotion()
@@ -53,5 +57,15 @@ public abstract class ChessMove extends Move
     public void setCheckmate(boolean checkmate)
     {
         this.checkmate = checkmate;
+    }
+
+    public ECastling getCastling()
+    {
+        return castling;
+    }
+
+    public void setCastling(ECastling castling)
+    {
+        this.castling = castling;
     }
 }

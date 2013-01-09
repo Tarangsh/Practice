@@ -1,9 +1,9 @@
 package ReusableContracts;
 
-import MiscData.Position;
+import Board.Board;
+import MiscData.Enums.EGameResult;
 import MiscData.parserResult;
 import ReusableContracts.Move.Move;
-import ReusableContracts.Piece.Piece;
 
 
 import java.util.ArrayList;
@@ -20,8 +20,9 @@ public abstract class Game
         gameMoves = new ArrayList<Move>();
     }
 
-    public void provideMoves(String Input)
+    public void provideMoves(String Input, InputParser inputParser)
     {
+        InParser = inputParser;
         parserResult result = InParser.parseInput(Input);
 
         if(result != null)
@@ -30,40 +31,15 @@ public abstract class Game
         }
     }
 
-    public int play()
-    {
-        Move currMove;
-        Piece sourcePiece;
-        Position currSource;
+    public abstract EGameResult play();
 
-        for(int i=0;i<gameMoves.size();i++)
-        {
-            currMove = gameMoves.get(i);
 
-            currSource = currMove.checkMove(gameBoard);
-
-            if(currSource == null)
-            {
-                //print fail
-                return 0;
-            }
-            else
-            {
-                gameBoard.movePiece(currSource,currMove.getDestination());
-                gameBoard.display();
-            }
-
-        }
-
-        //print Success
-        return 1;
-    }
 
     public void reset()
     {
         if(gameBoard != null)
         {
-            gameBoard.reset();
+            //gameBoard.reset();
         }
     }
 

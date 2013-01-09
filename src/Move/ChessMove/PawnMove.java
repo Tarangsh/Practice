@@ -1,7 +1,9 @@
 package Move.ChessMove;
 
+import MiscData.Enums.EPieceColor;
+import MiscData.Enums.EPieceName;
 import MiscData.Position;
-import ReusableContracts.Board;
+import Board.Board;
 import ReusableContracts.Move.ChessMove;
 
 public class PawnMove extends ChessMove
@@ -9,11 +11,11 @@ public class PawnMove extends ChessMove
     public Position checkMove(Board board)
     {
         //Starting Position
-        if(color.equals("WHITE"))
+        if(color.equals(EPieceColor.WHITE))
         {
             return checkMoveW(board);
         }
-        else if(color.equals("BLACK"))
+        else if(color.equals(EPieceColor.BLACK))
         {
             return checkMoveB(board);
         }
@@ -33,7 +35,7 @@ public class PawnMove extends ChessMove
             //Starting position
             if(destination.getX()==board.getxDim()-4)
             {
-                if(board.getPieceAt(board.getxDim()-2,destination.getY())!=null && board.getPieceAt(board.getxDim()-2,destination.getY()).getName().equals("P") && board.getPieceAt(board.getxDim()-3,destination.getY())==null)
+                if(board.getPieceAt(board.getxDim()-2,destination.getY())!=null && board.getPieceAt(board.getxDim()-2,destination.getY()).getName().equals(EPieceName.P) && board.getPieceAt(board.getxDim()-3,destination.getY())==null)
                 {
                     Src = new Position();
                     Src.setX(board.getxDim()-2);
@@ -42,7 +44,7 @@ public class PawnMove extends ChessMove
                 }
             }
 
-            if(board.getPieceAt(destination.getX()+1,destination.getY())!=null && board.getPieceAt(destination.getX()+1,destination.getY()).getName().equals("P"))
+            if(board.getPieceAt(destination.getX()+1,destination.getY())!=null && board.getPieceAt(destination.getX()+1,destination.getY()).getName().equals(EPieceName.P))
             {
                 Src = new Position();
                 Src.setX(destination.getX()+1);
@@ -75,7 +77,7 @@ public class PawnMove extends ChessMove
             //Starting position
             if(destination.getX()==3)
             {
-                 if(board.getPieceAt(1,destination.getY())!=null && board.getPieceAt(1,destination.getY()).getName().equals("P") && board.getPieceAt(2,destination.getY())==null)
+                 if(board.getPieceAt(1,destination.getY())!=null && board.getPieceAt(1,destination.getY()).getName().equals(EPieceName.P) && board.getPieceAt(2,destination.getY())==null)
                  {
                       Src = new Position();
                       Src.setX(1);
@@ -84,7 +86,7 @@ public class PawnMove extends ChessMove
                  }
             }
 
-            if(board.getPieceAt(destination.getX()-1,destination.getY())!=null && board.getPieceAt(destination.getX()-1,destination.getY()).getName().equals("P"))
+            if(board.getPieceAt(destination.getX()-1,destination.getY())!=null && board.getPieceAt(destination.getX()-1,destination.getY()).getName().equals(EPieceName.P))
             {
                 Src = new Position();
                 Src.setX(destination.getX()-1);

@@ -1,24 +1,25 @@
 package ReusableContracts.Move;
 
+import MiscData.Enums.ECastling;
+import MiscData.Enums.EFileLetter;
+import MiscData.Enums.EPieceColor;
 import MiscData.Position;
-import ReusableContracts.Board;
+import Board.Board;
 
 public abstract class Move
 {
     protected Position source;
     protected Position destination;
-    protected String color;
-    protected String FileLetter;
+    protected EPieceColor color;
+    protected EFileLetter FileLetter;
     protected String promotion;
 
     public Move()
     {
-        FileLetter = "_";
+        FileLetter = EFileLetter.u;
         source = null;
         destination = null;
-        color = "";
         promotion = "";
-
     }
 
     public abstract Position checkMove(Board board);
@@ -43,27 +44,25 @@ public abstract class Move
         this.destination = destination;
     }
 
-    public String getColor()
+    public EPieceColor getColor()
     {
         return color;
     }
 
-    public void setColor(String color)
+    public void setColor(EPieceColor color)
     {
         this.color = color;
     }
 
-    public String getFileLetter()
+    public EFileLetter getFileLetter()
     {
         return FileLetter;
     }
 
-    public void setFileLetter(String fileLetter)
+    public void setFileLetter(EFileLetter fileLetter)
     {
-        if(fileLetter.equals("a")||fileLetter.equals("b")||fileLetter.equals("c")||fileLetter.equals("d")||fileLetter.equals("e")||fileLetter.equals("f")||fileLetter.equals("g")||fileLetter.equals("h"))
-        {
+        //check for non file letter letters
             this.FileLetter = fileLetter;
-        }
     }
 
     public String getPromotion()
@@ -109,6 +108,15 @@ public abstract class Move
     }
 
     public void setKinging(boolean kinging)
+    {
+    }
+
+    public ECastling getCastling()
+    {
+        return ECastling.NA;
+    }
+
+    public void setCastling(ECastling castling)
     {
     }
 }

@@ -1,7 +1,7 @@
 package Move.CheckersMove;
 
 import MiscData.Position;
-import ReusableContracts.Board;
+import Board.Board;
 import ReusableContracts.Move.CheckersMove;
 
 public class CKingMove extends CheckersMove

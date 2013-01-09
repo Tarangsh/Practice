@@ -60,6 +60,10 @@ public abstract class InputParser
             return (new PawnMove());
         else if(type.contains("B"))
             return (new BishopMove());
+        else if(type.contains("O"))
+            return(new CastlingMove());
+        else if(type.contains("-"))
+            return null;
         else
             return (new PawnMove());
     }

@@ -1,5 +1,7 @@
 package InputParser;
 
+import MiscData.Enums.ECastling;
+import MiscData.Enums.EPieceColor;
 import MiscData.Position;
 import MiscData.parserResult;
 import ReusableContracts.InputParser;
@@ -9,12 +11,29 @@ import java.util.ArrayList;
 
 public class ChessInputParser extends InputParser
 {
-    public Move processMove(String move,String color)
+    public Move processMove(String move,EPieceColor color)
     {
         Move currMove = null;
         Position destination = new Position();
 
         currMove = getMove(move);
+
+        if(currMove == null)
+        {
+            return currMove;
+        }
+
+        if(move.contains("O"))
+        {
+            if(move.length()==3)
+            {
+               currMove.setCastling(ECastling.KINGSIDE);
+            }
+            else if(move.length()==5)
+            {
+                currMove.setCastling(ECastling.QUEENSIDE);
+            }
+        }
 
         if(move.contains("#"))
         {
@@ -51,7 +70,7 @@ public class ChessInputParser extends InputParser
         //FileLetterNumber
         if(move.length() > 0)
         {
-            currMove.setFileLetter(move.substring(move.length() - 1, move.length()));
+            //currMove.setFileLetter(move.substring(move.length() - 1, move.length()));
         }
 
         return currMove;
@@ -75,17 +94,16 @@ public class ChessInputParser extends InputParser
                 if(currToken.contains("."))
                 {
                     wMove = input.split(" ",2)[0];
-                    Moves.add(processMove(wMove,"WHITE"));
+                    Moves.add(processMove(wMove,EPieceColor.WHITE));
                     input = input.split(" ",2)[1];
 
                     if(input.length() > 0)
                     {
                         bMove = input.split(" ",2)[0];
-                        Moves.add(processMove(bMove,"BLACK"));
+                        Moves.add(processMove(bMove,EPieceColor.BLACK));
                         input = input.split(" ",2)[1];
                     }
                 }
-                //System.out.println(currToken);
             }
         }
         catch(Exception e)
