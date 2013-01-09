@@ -25,11 +25,11 @@
     <file path="/StdMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1356017474625" ignored="false" />
     <file path="/GameTester.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357648884548" ignored="false" />
     <file path="/PieceId.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357542670350" ignored="false" />
-    <file path="/RookMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357120869647" ignored="false" />
-    <file path="/BishopMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357120906616" ignored="false" />
+    <file path="/RookMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357723292823" ignored="false" />
+    <file path="/BishopMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357731913400" ignored="false" />
     <file path="/KnightMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357556078605" ignored="false" />
     <file path="/PawnMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357555680542" ignored="false" />
-    <file path="/QueenMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357120852938" ignored="false" />
+    <file path="/QueenMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357736015351" ignored="false" />
     <file path="/KingMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357120921878" ignored="false" />
     <file path="/InputParser.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357656711492" ignored="false" />
     <file path="/parserResult.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1356078229277" ignored="false" />
@@ -90,7 +90,7 @@
     <file path="/Jumping.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357199338526" ignored="false" />
     <file path="/Kinging.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357199377494" ignored="false" />
     <file path="/CheckersInputParser.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357201276399" ignored="false" />
-    <file path="/ChessInputParser.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357656896604" ignored="false" />
+    <file path="/ChessInputParser.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357717919891" ignored="false" />
     <file path="/IMove.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357221716949" ignored="false" />
     <file path="/EPieceName.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357544170613" ignored="false" />
     <file path="/PieceFactory.java" changelist="b749c37a-c585-449d-a95a-d9d787227c56" time="1357544270172" ignored="false" />
@@ -203,58 +203,11 @@
       <file leaf-file-name="ChessInputParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InputParser/ChessInputParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="50" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.0">
+            <state line="19" column="71" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2255#2261#0" expanded="true" />
+                <element signature="e#2304#2310#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PieceFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Piece/PieceFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Board.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Board/Board.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parserResult.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MiscData/parserResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ReusableContracts/InputParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="16" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="23" selection-start="745" selection-end="745" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -262,7 +215,7 @@
       <file leaf-file-name="Piece.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Piece/Piece.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="63" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
+            <state line="33" column="22" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -270,30 +223,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckersMove.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/CheckersMove.java">
+      <file leaf-file-name="GameController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/GameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="81" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KnightMove.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/KnightMove.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CPieceMove.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Move/CheckersMove/CPieceMove.java">
+      <file leaf-file-name="RookMove.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/RookMove.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="186" column="4" selection-start="812" selection-end="5032" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CKingMove.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Move/CheckersMove/CKingMove.java">
+      <file leaf-file-name="BishopMove.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/BishopMove.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="51" selection-start="221" selection-end="221" vertical-scroll-proportion="0.186722">
+            <state line="46" column="8" selection-start="1038" selection-end="5064" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueenMove.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/QueenMove.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="324" column="66" selection-start="9072" selection-end="9072" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChessMove.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/ChessMove.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="44" selection-start="107" selection-end="111" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Move.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/Move.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="22" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KingMove.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/KingMove.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -311,13 +309,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Player/PlayerDirectory.java" />
-        <option value="$PROJECT_DIR$/src/Player/Player.java" />
-        <option value="$PROJECT_DIR$/src/Move/ChessMove/CastlingMove.java" />
         <option value="$PROJECT_DIR$/src/MiscData/Castling.java" />
         <option value="$PROJECT_DIR$/src/ReusableContracts/Move/ChessMove.java" />
-        <option value="$PROJECT_DIR$/src/ReusableContracts/Move/Move.java" />
-        <option value="$PROJECT_DIR$/src/Move/ChessMove/KnightMove.java" />
         <option value="$PROJECT_DIR$/src/MiscData/Enums/ECastling.java" />
         <option value="$PROJECT_DIR$/src/MiscData/Enums/EChessResult.java" />
         <option value="$PROJECT_DIR$/src/GameTester/GameTester.java" />
@@ -325,16 +318,21 @@
         <option value="$PROJECT_DIR$/src/Game/vsGame.java" />
         <option value="$PROJECT_DIR$/src/Controller/GameController.java" />
         <option value="$PROJECT_DIR$/src/ReusableContracts/InputParser.java" />
-        <option value="$PROJECT_DIR$/src/InputParser/ChessInputParser.java" />
         <option value="$PROJECT_DIR$/src/ReusableContracts/Game.java" />
+        <option value="$PROJECT_DIR$/src/InputParser/ChessInputParser.java" />
+        <option value="$PROJECT_DIR$/src/Move/ChessMove/KnightMove.java" />
+        <option value="$PROJECT_DIR$/src/ReusableContracts/Move/Move.java" />
+        <option value="$PROJECT_DIR$/src/Move/ChessMove/RookMove.java" />
+        <option value="$PROJECT_DIR$/src/Move/ChessMove/BishopMove.java" />
+        <option value="$PROJECT_DIR$/src/Move/ChessMove/QueenMove.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
-    <option name="y" value="-4" />
-    <option name="width" value="1857" />
-    <option name="height" value="1085" />
+    <option name="y" value="24" />
+    <option name="width" value="1303" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -819,7 +817,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
+    <frame x="64" y="24" width="1303" height="745" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -836,8 +834,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22719735" sideWeight="0.8217716" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1782284" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32749003" sideWeight="0.7328" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.279732" sideWeight="0.99840635" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -904,78 +902,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/KnightMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameTester/GameTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player/RatingData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/GameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="20" selection-start="1654" selection-end="1658" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/vsGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="13" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/InputParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="16" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MiscData/parserResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/InputParser/ChessInputParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="50" selection-start="2500" selection-end="2500" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2255#2261#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Piece/PieceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="0" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0">
@@ -997,15 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Piece/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="63" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/CheckersMove.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="81" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
@@ -1024,10 +941,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Move/CheckersMove/CKingMove.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="221" selection-end="221" vertical-scroll-proportion="0.186722">
+        <state line="9" column="51" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/GameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/InputParser/ChessInputParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="71" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2304#2310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/KingMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Piece/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="22" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/Move.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="22" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReusableContracts/Move/ChessMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="107" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/RookMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="4" selection-start="812" selection-end="5032" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/BishopMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="8" selection-start="1038" selection-end="5064" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/QueenMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="324" column="66" selection-start="9072" selection-end="9072" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Move/ChessMove/KnightMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

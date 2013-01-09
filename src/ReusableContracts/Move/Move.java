@@ -11,12 +11,12 @@ public abstract class Move
     protected Position source;
     protected Position destination;
     protected EPieceColor color;
-    protected EFileLetter FileLetter;
+    protected EFileLetter fileLetter;
     protected String promotion;
 
     public Move()
     {
-        FileLetter = EFileLetter.u;
+        fileLetter = EFileLetter.u;
         source = null;
         destination = null;
         promotion = "";
@@ -56,13 +56,13 @@ public abstract class Move
 
     public EFileLetter getFileLetter()
     {
-        return FileLetter;
+        return fileLetter;
     }
 
     public void setFileLetter(EFileLetter fileLetter)
     {
         //check for non file letter letters
-            this.FileLetter = fileLetter;
+            this.fileLetter = fileLetter;
     }
 
     public String getPromotion()

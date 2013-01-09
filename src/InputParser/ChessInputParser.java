@@ -1,6 +1,7 @@
 package InputParser;
 
 import MiscData.Enums.ECastling;
+import MiscData.Enums.EFileLetter;
 import MiscData.Enums.EPieceColor;
 import MiscData.Position;
 import MiscData.parserResult;
@@ -70,7 +71,7 @@ public class ChessInputParser extends InputParser
         //FileLetterNumber
         if(move.length() > 0)
         {
-            //currMove.setFileLetter(move.substring(move.length() - 1, move.length()));
+            currMove.setFileLetter(getEfileLetter(move.substring(move.length() - 1, move.length())));
         }
 
         return currMove;
@@ -115,6 +116,46 @@ public class ChessInputParser extends InputParser
         result.setResult("");
 
         return result;
+    }
+
+    private EFileLetter getEfileLetter(String fileLetter)
+    {
+        if(fileLetter.contains("a"))
+        {
+            return EFileLetter.a;
+        }
+        else if(fileLetter.contains("b"))
+        {
+            return EFileLetter.b;
+        }
+        else if(fileLetter.contains("c"))
+        {
+            return EFileLetter.c;
+        }
+        else if(fileLetter.contains("d"))
+        {
+            return EFileLetter.d;
+        }
+        else if(fileLetter.contains("e"))
+        {
+            return EFileLetter.e;
+        }
+        else if(fileLetter.contains("f"))
+        {
+            return EFileLetter.f;
+        }
+        else if(fileLetter.contains("g"))
+        {
+            return EFileLetter.g;
+        }
+        else if(fileLetter.contains("h"))
+        {
+            return EFileLetter.h;
+        }
+        else
+        {
+            return EFileLetter.u;
+        }
     }
 
 }

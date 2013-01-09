@@ -22,14 +22,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x+1,y+2)!=null && board.getPieceAt(x+1,y+2).getName().equals(EPieceName.N) && board.getPieceAt(x+1,y+2).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                      src = new Position(x+1,y+2);
                      return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x+1,y+2).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x+1,y+2).getFileLetter()))
                     {
                         src = new Position(x+1,y+2);
                         return src;
@@ -42,14 +42,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x+1,y-2)!=null && board.getPieceAt(x+1,y-2).getName().equals(EPieceName.N) && board.getPieceAt(x+1,y-2).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                     src = new Position(x+1,y-2);
                     return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x+1,y-2).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x+1,y-2).getFileLetter()))
                     {
                         src = new Position(x+1,y-2);
                         return src;
@@ -62,14 +62,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x-1,y+2)!=null && board.getPieceAt(x-1,y+2).getName().equals(EPieceName.N) && board.getPieceAt(x-1,y+2).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                     src = new Position(x-1,y+2);
                     return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x-1,y+2).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x-1,y+2).getFileLetter()))
                     {
                         src = new Position(x-1,y+2);
                         return src;
@@ -82,14 +82,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x-1,y-2)!=null && board.getPieceAt(x-1,y-2).getName().equals(EPieceName.N) && board.getPieceAt(x-1,y-2).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                     src = new Position(x-1,y-2);
                     return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x-1,y-2).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x-1,y-2).getFileLetter()))
                     {
                         src = new Position(x-1,y-2);
                         return src;
@@ -102,14 +102,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x+2,y+1)!=null && board.getPieceAt(x+2,y+1).getName().equals(EPieceName.N) && board.getPieceAt(x+2,y+1).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                     src = new Position(x+2,y+1);
                     return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x+2,y+1).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x+2,y+1).getFileLetter()))
                     {
                         src = new Position(x+2,y+1);
                         return src;
@@ -122,14 +122,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x+2,y-1)!=null && board.getPieceAt(x+2,y-1).getName().equals(EPieceName.N) && board.getPieceAt(x+2,y-1).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                     src = new Position(x+2,y-1);
                     return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x+2,y-1).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x+2,y-1).getFileLetter()))
                     {
                         src = new Position(x+2,y-1);
                         return src;
@@ -142,14 +142,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x-2,y+1)!=null && board.getPieceAt(x-2,y+1).getName().equals(EPieceName.N) && board.getPieceAt(x-2,y+1).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                     src = new Position(x-2,y+1);
                     return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x-2,y+1).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x-2,y+1).getFileLetter()))
                     {
                         src = new Position(x-2,y+1);
                         return src;
@@ -162,14 +162,14 @@ public class KnightMove extends ChessMove
         {
             if(board.getPieceAt(x-2,y-1)!=null && board.getPieceAt(x-2,y-1).getName().equals(EPieceName.N) && board.getPieceAt(x-2,y-1).getColor().equals(color))
             {
-                if(FileLetter.equals(EFileLetter.u))
+                if(fileLetter.equals(EFileLetter.u))
                 {
                     src = new Position(x-2,y-1);
                     return src;
                 }
                 else
                 {
-                    if(FileLetter.equals(board.getPieceAt(x-2,y-1).getFileLetter()))
+                    if(fileLetter.equals(board.getPieceAt(x-2,y-1).getFileLetter()))
                     {
                         src = new Position(x-2,y-1);
                         return src;
@@ -201,7 +201,7 @@ public class KnightMove extends ChessMove
             }
 
 
-            if(board.getPieceAt(destination.getX(),destination.getY()).getColor().equals(color))
+            if(board.getPieceAt(destination.getX(),destination.getY()).getColor() == color)
             {
                 return null;
             }
